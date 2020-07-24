@@ -1,0 +1,17 @@
+<h1>Alternative Fuel Station Nearest</h1>
+<h1><%= @facade.location %></h1>
+
+<section class="closest-station">
+  <h3>Station Name: <%=@facade.station_name %></h3>
+  <p>Fuel Type: <%=@facade.fuel_type %></p>
+  <p>Access Times: <%=@facade.access_times %></p>
+</section>
+
+<section class="station-directions">
+  <h3>Station Directions</h3>
+  <p>Distance to station: <%=@facade.distance_to_station %> Miles</p>
+  <p>Travel Time: <%=@facade.travel_time %> Minutes</p>
+  <h3>Travel Instructions</h3>
+  <p><%=@facade.travel_instructions %></p>
+
+</section>x
