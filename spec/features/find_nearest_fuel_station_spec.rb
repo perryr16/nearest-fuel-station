@@ -13,13 +13,13 @@ describe 'user can find fuel station near address' do
   end
 
 
-  it "find station near turing" do
+  it "find station near turing", :vcr do
     visit root_path 
     expect(current_path).to eq('/')
 
     select('Turing', from: :location)
     click_on 'Find Nearest Station'
-
+save_and_open_page
     expect(current_path).to eq('/search')
 
     within('.closest-station') do 
